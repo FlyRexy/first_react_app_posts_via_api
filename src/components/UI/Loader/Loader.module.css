@@ -1,0 +1,35 @@
+.loader {
+    display: flex;
+    gap: 5px;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    margin-left: 500px;
+}
+.box {
+    width: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    background: black;
+    animation: 1s loading infinite;
+}
+.box:nth-child(1) {
+    animation-delay: -.4s;
+}
+.box:nth-child(2) {
+    animation-delay: -.2s;
+}
+.box:nth-child(3) {
+    animation-delay: 0s;
+}
+@keyframes loading {
+    from {
+        height: 30px;
+    }
+    to {
+        height: 50px;
+        animation-timing-function: ease-out;
+    }
+}
