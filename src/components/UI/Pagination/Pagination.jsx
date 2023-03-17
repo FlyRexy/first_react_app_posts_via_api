@@ -3,7 +3,6 @@ import React, {useMemo} from 'react';
 const Pagination = ({change, totalPages}) => {
     const pages = useMemo(() => {
         let result = []
-        console.log('im here')
         for (let i = 0; i < totalPages; i++) {
             result.push(i + 1)
         }

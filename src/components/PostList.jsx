@@ -5,7 +5,6 @@ import '../styles/Post.css'
 const PostList = ({posts, title, remove}) => {
 
     if(!posts.length) {
-        console.log('HOW ARE YOU HERE')
         return (
             <h1>There are no posts</h1>
         )

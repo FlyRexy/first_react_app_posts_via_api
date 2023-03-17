@@ -3,7 +3,6 @@ import Selection from "./UI/Selection";
 import MyInput from "./UI/input/MyInput";
 
 const PostFilter = ({filter, setFilter}) => {
-    console.log('filter')
     return (
         <div>
             <Selection

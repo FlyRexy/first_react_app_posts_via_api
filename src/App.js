@@ -27,7 +27,6 @@ function App() {
     const [page, setPage] = useState(1)
 
     useEffect( () => {
-        console.log('useEffect')
         fetchPosts()
     }, [page])
 
@@ -73,11 +72,6 @@ function App() {
     const getToOtherPage = (page) => {
         setPage(page)
     }
-    useEffect(() => {
-        navigator.geolocation.getCurrentPosition((position) => {
-            console.log(position)
-        })
-    }, [])
 
 
   return (
